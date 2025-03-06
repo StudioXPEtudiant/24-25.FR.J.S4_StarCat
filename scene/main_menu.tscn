@@ -3,10 +3,11 @@
 [ext_resource type="Script" path="res://script/main_menu.gd" id="1_msh6n"]
 [ext_resource type="Texture2D" uid="uid://dy1fgc12g6i80" path="res://texture/Background/Design sans titre (2).png" id="2_a12nw"]
 [ext_resource type="FontFile" uid="uid://br2uodi2ap6mc" path="res://texture/font/VCR_OSD_MONO_1.001.ttf" id="3_xi2o1"]
-[ext_resource type="FontFile" uid="uid://kpaq86oebbec" path="res://texture/font/upheavtt.ttf" id="4_2r80p"]
+[ext_resource type="Texture2D" uid="uid://bykjpf1frr7qk" path="res://texture/Star-Cat.png" id="4_g2a4q"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pc58j"]
 texture = ExtResource("2_a12nw")
+modulate_color = Color(0.341176, 0.482353, 0.270588, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_85ap4"]
 
@@ -122,27 +123,10 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_gyvs2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_drwu3")
 text = "EXIT"
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -345.0
-offset_top = -226.0
-offset_right = 345.0
-offset_bottom = -90.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
-theme_override_constants/shadow_offset_x = 5
-theme_override_constants/shadow_offset_y = 5
-theme_override_fonts/font = ExtResource("4_2r80p")
-theme_override_font_sizes/font_size = 150
-text = "STARCAT"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Star-cat" type="Sprite2D" parent="."]
+position = Vector2(588, 162)
+scale = Vector2(1.43548, 1.43548)
+texture = ExtResource("4_g2a4q")
 
 [connection signal="pressed" from="VBoxContainer/Button start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button option" to="." method="_on_option_pressed"]

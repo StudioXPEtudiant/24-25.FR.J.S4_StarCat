@@ -52,7 +52,7 @@ text = "II"
 script = ExtResource("1_5evfh")
 
 [node name="NewPiskel1" type="Sprite2D" parent="."]
-position = Vector2(578, 194)
+position = Vector2(452, 180)
 texture = ExtResource("2_lvlyh")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

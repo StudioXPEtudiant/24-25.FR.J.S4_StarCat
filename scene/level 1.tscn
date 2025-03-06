@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://cyrshtl1m7wg3"]
+[gd_scene load_steps=13 format=3 uid="uid://cyrshtl1m7wg3"]
 
 [ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_8evfg"]
 [ext_resource type="PackedScene" uid="uid://c051ijxgyxl8h" path="res://scene/prefabs/main_character.tscn" id="2_jwlg7"]
 [ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="3_r06u4"]
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_ffk4s"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Exit.tscn" id="5_m1a0p"]
+[ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_12gj5"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83wet"]
 texture = ExtResource("3_r06u4")
@@ -54,10 +55,10 @@ scale = Vector2(0.7, 0.7)
 
 [node name="Panel" type="Panel" parent="."]
 z_index = -1
-offset_left = -3.0
-offset_top = -6.0
-offset_right = 1162.0
-offset_bottom = 652.0
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 1149.0
+offset_bottom = 650.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
 
 [node name="Button" type="Button" parent="."]
@@ -135,5 +136,9 @@ position = Vector2(5, 14)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(576, 328)
+
+[node name="Terror-heights-dark-ambience-230667" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-104, 296)
+stream = ExtResource("6_12gj5")
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
