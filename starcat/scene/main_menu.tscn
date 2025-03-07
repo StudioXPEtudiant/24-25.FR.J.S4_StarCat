@@ -7,7 +7,6 @@
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pc58j"]
 texture = ExtResource("2_a12nw")
-modulate_color = Color(0.341176, 0.482353, 0.270588, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_85ap4"]
 
@@ -124,9 +123,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_drwu3")
 text = "EXIT"
 
 [node name="Star-cat" type="Sprite2D" parent="."]
-position = Vector2(588, 162)
-scale = Vector2(1.43548, 1.43548)
+position = Vector2(597, 149.125)
+scale = Vector2(1.67895, 1.79234)
 texture = ExtResource("4_g2a4q")
+metadata/_edit_group_ = true
 
 [connection signal="pressed" from="VBoxContainer/Button start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/Button option" to="." method="_on_option_pressed"]

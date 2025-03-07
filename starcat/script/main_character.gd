@@ -37,3 +37,6 @@ func _physics_process(delta: float) -> void:
 		if collider.is_in_group("Exit"):
 			print ("collision EXIT")
 	
+	if Input.is_action_just_pressed("Sandbox"):
+		get_tree().change_scene_to_file("res://scene/test_programmer.tscn")
+	
