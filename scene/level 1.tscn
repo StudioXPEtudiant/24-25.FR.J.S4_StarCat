@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cyrshtl1m7wg3"]
+[gd_scene load_steps=14 format=3 uid="uid://cyrshtl1m7wg3"]
 
 [ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_8evfg"]
 [ext_resource type="PackedScene" uid="uid://c051ijxgyxl8h" path="res://scene/prefabs/main_character.tscn" id="2_jwlg7"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_ffk4s"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Exit.tscn" id="5_m1a0p"]
 [ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_12gj5"]
+[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://scene/prefabs/collectabble.tscn" id="7_ocrhu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83wet"]
 texture = ExtResource("3_r06u4")
@@ -140,5 +141,29 @@ position = Vector2(576, 328)
 [node name="Terror-heights-dark-ambience-230667" type="AudioStreamPlayer2D" parent="."]
 position = Vector2(-104, 296)
 stream = ExtResource("6_12gj5")
+
+[node name="collectable" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(504, 432)
+
+[node name="collectable2" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(312, 160)
+
+[node name="collectable3" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(768, 280)
+
+[node name="collectable4" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(1040, 184)
+
+[node name="collectable5" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(736, 96)
+
+[node name="collectable6" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(24, 80)
+
+[node name="collectable7" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(880, 384)
+
+[node name="collectable8" parent="." instance=ExtResource("7_ocrhu")]
+position = Vector2(464, -8)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

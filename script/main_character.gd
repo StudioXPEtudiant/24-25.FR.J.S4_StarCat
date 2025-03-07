@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
 
-const SPEED = 200.0
-const JUMP_VELOCITY = -350.0
+const SPEED = 175.0
+const JUMP_VELOCITY = -275.0
 var  max_jumps: int = 1
 var jumps_left: int = max_jumps
 
