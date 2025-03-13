@@ -1,10 +1,11 @@
 extends CharacterBody2D
 
-
 const SPEED = 175.0
 const JUMP_VELOCITY = -275.0
 var  max_jumps: int = 1
 var jumps_left: int = max_jumps
+var max_vie: int = 3
+var vie: int = max_vie
 
 func _physics_process(delta: float) -> void:
 	
@@ -40,3 +41,22 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("Sandbox"):
 		get_tree().change_scene_to_file("res://scene/test_programmer.tscn")
 	
+func prendre_degats(degats: int):
+	vie -= degats
+	vie = max(vie, 0)
+	if vie == 0:
+		mourir()
+
+func soigner(soin: int):
+	vie += soin
+	vie = min(vie, max_vie)  # Empêche de dépasser la vie max
+	
+func mourir():
+	queue_free()
+	get_tree().change_scene_to_file("res://scene/level 1.tscn")
+
+func _input(event):
+	if event.is_action_pressed("degat"):  # Exemple : touche "Entrée"
+		prendre_degats(1)
+	elif event.is_action_pressed("ui_cancel"):  # Exemple : touche "Échap"
+		soigner(1)
