@@ -1,0 +1,58 @@
+[gd_scene load_steps=7 format=3 uid="uid://xnqsebyrwll6"]
+
+[ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_5evfh"]
+[ext_resource type="Texture2D" uid="uid://3tvydqo5trtg" path="res://texture/sprite/New_Piskel_1.png" id="2_lvlyh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wk5oh"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqsdn"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.450648, 0.450648, 0.450648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_64cnf"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.450648, 0.450648, 0.450648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5e8oi"]
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+shadow_size = 8
+shadow_offset = Vector2(5, 5)
+
+[node name="menu_option" type="Node2D"]
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1066.0
+offset_top = 22.0
+offset_right = 1117.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wk5oh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jqsdn")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_64cnf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_5e8oi")
+text = "II"
+script = ExtResource("1_5evfh")
+
+[node name="NewPiskel1" type="Sprite2D" parent="."]
+position = Vector2(452, 180)
+texture = ExtResource("2_lvlyh")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

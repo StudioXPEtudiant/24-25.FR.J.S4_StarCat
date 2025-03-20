@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b1qkg37nj4nha"]
+
+[ext_resource type="Script" path="res://script/Degat.gd" id="1_0kobd"]
+[ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="1_v6nb3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dudql"]
+size = Vector2(237, 72)
+
+[node name="Node2D" type="Node2D" groups=["Exit"]]
+script = ExtResource("1_0kobd")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." groups=["Degat", "Exit"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" groups=["Exit"]]
+position = Vector2(1.5, 0)
+shape = SubResource("RectangleShape2D_dudql")
+script = ExtResource("1_0kobd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -1)
+scale = Vector2(0.125602, -0.0697233)
+texture = ExtResource("1_v6nb3")

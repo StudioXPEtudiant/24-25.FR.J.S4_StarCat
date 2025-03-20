@@ -1,0 +1,173 @@
+[gd_scene load_steps=14 format=3 uid="uid://bh75tukc1yl40"]
+
+[ext_resource type="PackedScene" uid="uid://c051ijxgyxl8h" path="res://scene/prefabs/main_character.tscn" id="1_1uwrf"]
+[ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="2_x8t1s"]
+[ext_resource type="Script" path="res://script/button_main_menu.gd" id="3_darpy"]
+[ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_4rtw3"]
+[ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_f6cpn"]
+[ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_1b3x8"]
+[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://scene/prefabs/collectabble.tscn" id="7_ue1j8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ycow7"]
+texture = ExtResource("2_x8t1s")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nyqv0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c7wbh"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.450648, 0.450648, 0.450648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v86cy"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.450648, 0.450648, 0.450648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dka2f"]
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+shadow_size = 8
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="TileSet" id="TileSet_umtg4"]
+physics_layer_0/collision_layer = 1
+
+[node name="TEST PROGRAMMER" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 309.0
+offset_top = 273.0
+offset_right = 860.0
+offset_bottom = 487.0
+theme_override_font_sizes/font_size = 100
+text = "Sandbox"
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" parent="." instance=ExtResource("1_1uwrf")]
+position = Vector2(184, 515)
+scale = Vector2(0.7, 0.7)
+
+[node name="Panel" type="Panel" parent="."]
+modulate = Color(1, 0, 0.27451, 1)
+z_index = -1
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 1149.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_ycow7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1066.0
+offset_top = 22.0
+offset_right = 1117.0
+offset_bottom = 73.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nyqv0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_c7wbh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v86cy")
+theme_override_styles/normal = SubResource("StyleBoxFlat_dka2f")
+text = "II"
+script = ExtResource("3_darpy")
+metadata/_edit_use_anchors_ = true
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_umtg4")
+format = 2
+
+[node name="block_ground" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(580, 615)
+scale = Vector2(21.6986, 1.28833)
+
+[node name="block_ground2" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(1133, 316)
+scale = Vector2(1.48644, 11.36)
+
+[node name="block_ground3" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(501, 528)
+scale = Vector2(2.19451, 1.81184)
+
+[node name="block_ground6" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(1080, 244)
+scale = Vector2(3.19451, 0.647944)
+
+[node name="block_ground7" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(729, 145)
+scale = Vector2(3.19451, 0.647944)
+
+[node name="block_ground8" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(187, 227)
+scale = Vector2(6.86233, 0.800124)
+
+[node name="block_ground9" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(-21, 373)
+scale = Vector2(-1.82099, 9.21516)
+
+[node name="block_ground4" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(861, 454)
+scale = Vector2(2.2411, -1.29831)
+
+[node name="block_ground10" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(1048, 568)
+rotation = -0.464231
+scale = Vector2(4.43332, -1.09744)
+
+[node name="block_ground11" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(46, 555)
+rotation = 0.864652
+scale = Vector2(2.64186, -1.43969)
+
+[node name="block_ground5" parent="." instance=ExtResource("4_4rtw3")]
+position = Vector2(764, 409)
+scale = Vector2(2.2411, -2.89831)
+
+[node name="Eau" parent="." instance=ExtResource("5_f6cpn")]
+position = Vector2(690, 541)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 328)
+
+[node name="Terror-heights-dark-ambience-230667" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-104, 296)
+stream = ExtResource("6_1b3x8")
+
+[node name="collectable" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(504, 432)
+
+[node name="collectable2" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(312, 160)
+
+[node name="collectable3" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(768, 280)
+
+[node name="collectable4" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(1040, 184)
+
+[node name="collectable5" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(736, 96)
+
+[node name="collectable6" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(24, 80)
+
+[node name="collectable7" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(880, 384)
+
+[node name="collectable8" parent="." instance=ExtResource("7_ue1j8")]
+position = Vector2(464, -8)
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
