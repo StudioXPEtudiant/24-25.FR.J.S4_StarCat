@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://xnqsebyrwll6"]
 
-[ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_5evfh"]
+[ext_resource type="Script" uid="uid://bfrxmgoop5tv5" path="res://script/button_main_menu.gd" id="1_5evfh"]
 [ext_resource type="Texture2D" uid="uid://3tvydqo5trtg" path="res://texture/sprite/New_Piskel_1.png" id="2_lvlyh"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wk5oh"]

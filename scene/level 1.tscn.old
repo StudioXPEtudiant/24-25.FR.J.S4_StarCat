@@ -1,0 +1,514 @@
+[gd_scene load_steps=12 format=3 uid="uid://cyrshtl1m7wg3"]
+
+[ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_8evfg"]
+[ext_resource type="Script" path="res://script/level_1.gd" id="1_wn7s2"]
+[ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="3_r06u4"]
+[ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="5_l8a57"]
+[ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_m1a0p"]
+[ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_12gj5"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83wet"]
+texture = ExtResource("3_r06u4")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1rnie"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_124vq"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.450648, 0.450648, 0.450648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5sysw"]
+bg_color = Color(0.377919, 0.377919, 0.377919, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.450648, 0.450648, 0.450648, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k40f3"]
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+shadow_size = 8
+shadow_offset = Vector2(5, 5)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83wet"]
+texture = ExtResource("3_r06u4")
+
+[sub_resource type="TileSet" id="TileSet_h82wh"]
+physics_layer_0/collision_layer = 1
+
+[node name="Level1" type="Node2D"]
+script = ExtResource("1_wn7s2")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 386.0
+offset_top = 234.0
+offset_right = 937.0
+offset_bottom = 448.0
+theme_override_font_sizes/font_size = 100
+text = "LEVEL 1"
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel" type="Panel" parent="."]
+z_index = -1
+offset_left = -16.0
+offset_top = -8.0
+offset_right = 1149.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="Player"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 1364.29
+offset_top = -735.714
+offset_right = 1415.29
+offset_bottom = -684.714
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 25
+theme_override_styles/focus = SubResource("StyleBoxEmpty_1rnie")
+theme_override_styles/hover = SubResource("StyleBoxFlat_124vq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5sysw")
+theme_override_styles/normal = SubResource("StyleBoxFlat_k40f3")
+text = "II"
+script = ExtResource("1_8evfg")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel2" type="Panel" parent="."]
+z_index = -1
+offset_left = 983.0
+offset_top = -8.0
+offset_right = 2148.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel4" type="Panel" parent="."]
+z_index = -1
+offset_left = 2169.0
+offset_right = 3334.0
+offset_bottom = 658.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel10" type="Panel" parent="."]
+z_index = -1
+offset_left = 2148.0
+offset_top = -7.0
+offset_right = 3313.0
+offset_bottom = 651.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel5" type="Panel" parent="."]
+z_index = -1
+offset_left = 1860.0
+offset_top = -310.0
+offset_right = 3025.0
+offset_bottom = 348.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel8" type="Panel" parent="."]
+z_index = -1
+offset_left = 3334.0
+offset_top = -8.0
+offset_right = 4499.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel9" type="Panel" parent="."]
+z_index = -1
+offset_left = 2953.0
+offset_top = -905.0
+offset_right = 4118.0
+offset_bottom = -247.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel14" type="Panel" parent="."]
+z_index = -1
+offset_left = 2956.0
+offset_top = -1115.0
+offset_right = 4121.0
+offset_bottom = -457.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel11" type="Panel" parent="."]
+z_index = -1
+offset_left = 3025.0
+offset_top = -544.0
+offset_right = 4190.0
+offset_bottom = 114.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel12" type="Panel" parent="."]
+z_index = -1
+offset_left = 3330.0
+offset_top = -639.0
+offset_right = 4495.0
+offset_bottom = 19.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel13" type="Panel" parent="."]
+z_index = -1
+offset_left = 3334.0
+offset_top = -905.0
+offset_right = 4499.0
+offset_bottom = -247.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel6" type="Panel" parent="."]
+z_index = -1
+offset_left = 697.0
+offset_top = -311.0
+offset_right = 1862.0
+offset_bottom = 347.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel7" type="Panel" parent="."]
+z_index = -1
+offset_left = 3.0
+offset_top = -311.0
+offset_right = 1168.0
+offset_bottom = 347.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="Panel3" type="Panel" parent="."]
+z_index = -1
+offset_left = -2.0
+offset_top = -8.0
+offset_right = 1163.0
+offset_bottom = 650.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
+metadata/_edit_use_anchors_ = true
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_h82wh")
+format = 2
+
+[node name="Exit" parent="." instance=ExtResource("5_m1a0p")]
+position = Vector2(2, 2)
+
+[node name="Terror-heights-dark-ambience-230667" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(-104, 296)
+
+[node name="block_ground" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(133, 621)
+
+[node name="block_ground6" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(376, 595)
+
+[node name="block_ground8" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(603, 578)
+
+[node name="block_ground9" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(769, 537)
+
+[node name="block_ground10" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(769, 590)
+
+[node name="block_ground13" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(958, 395)
+
+[node name="block_ground11" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(769, 622)
+
+[node name="block_ground14" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(983, 622)
+
+[node name="block_ground15" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1212, 621)
+
+[node name="block_ground16" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1328, 392)
+
+[node name="block_ground17" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1438, 621)
+
+[node name="block_ground20" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1668, 621)
+
+[node name="block_ground24" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1521, 22)
+
+[node name="block_ground25" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1751, 23)
+
+[node name="block_ground7" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(591, 621)
+collision_layer = 3
+
+[node name="block_ground2" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(364, 621)
+
+[node name="block_ground26" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1825, 422)
+
+[node name="block_ground35" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2149, 228)
+
+[node name="block_ground38" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2132, -282)
+
+[node name="block_ground39" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2358, -282)
+
+[node name="block_ground45" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2495, -281)
+
+[node name="block_ground51" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2710, -282)
+
+[node name="block_ground52" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2908, -282)
+
+[node name="block_ground27" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1860, 621)
+
+[node name="block_ground29" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2093, 621)
+
+[node name="block_ground30" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2321, 621)
+
+[node name="block_ground42" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2715, 621)
+
+[node name="block_ground49" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2710, 567)
+
+[node name="block_ground50" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2852, 570)
+
+[node name="block_ground57" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3232, 561)
+
+[node name="block_ground67" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3464, 620)
+
+[node name="block_ground68" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3690, 620)
+
+[node name="block_ground61" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3232, 115)
+
+[node name="block_ground62" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3527, 117)
+
+[node name="block_ground64" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3716, -19)
+scale = Vector2(0.172968, 0.986339)
+
+[node name="block_ground66" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3129, -438)
+
+[node name="block_ground69" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3328, -699)
+
+[node name="block_ground88" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3328, -699)
+
+[node name="block_ground75" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3087, -1115)
+
+[node name="block_ground76" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3220, -1114)
+
+[node name="block_ground77" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3397, -1115)
+
+[node name="block_ground78" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3570, -1113)
+
+[node name="block_ground79" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3728, -1115)
+
+[node name="block_ground70" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3560, -700)
+
+[node name="block_ground80" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3527, -857)
+
+[node name="block_ground72" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3679, -700)
+
+[node name="block_ground65" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3468, -440)
+scale = Vector2(0.307688, 1.16017)
+
+[node name="block_ground48" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2497, 620)
+
+[node name="block_ground47" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2908, 630)
+
+[node name="block_ground54" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3087, 629)
+
+[node name="block_ground55" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3244, 628)
+
+[node name="block_ground56" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3244, 595)
+
+[node name="block_ground31" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1961, 24)
+
+[node name="block_ground3" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(30.9999, 479)
+rotation = -1.56556
+
+[node name="block_ground12" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(853, 481)
+rotation = -1.56556
+
+[node name="block_ground18" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1374, 258)
+rotation = -1.56556
+
+[node name="block_ground22" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1403, 257)
+rotation = -1.56556
+
+[node name="block_ground23" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1403, 106)
+rotation = -1.56556
+
+[node name="block_ground21" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1720, 496)
+rotation = -1.56556
+
+[node name="block_ground28" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2038, 328)
+rotation = -1.56556
+
+[node name="block_ground33" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2396, 508)
+rotation = -1.56556
+
+[node name="block_ground41" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2573, 267)
+rotation = -1.56556
+
+[node name="block_ground60" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3367, 249)
+rotation = -1.56556
+
+[node name="block_ground63" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3369, -37)
+rotation = -1.56556
+
+[node name="block_ground34" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2398, 296)
+rotation = -1.56556
+
+[node name="block_ground40" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2572, 129)
+rotation = -1.56556
+
+[node name="block_ground43" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2575, 6.99999)
+rotation = -1.56556
+
+[node name="block_ground32" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2038, 110)
+rotation = -1.56556
+
+[node name="block_ground44" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2577, -130)
+rotation = -1.56556
+
+[node name="block_ground46" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2575, -165)
+rotation = -1.56556
+
+[node name="block_ground53" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2980, -398)
+rotation = -1.56556
+
+[node name="block_ground58" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2982, -613)
+rotation = -1.56556
+
+[node name="block_ground59" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2982, -815)
+rotation = -1.56556
+
+[node name="block_ground73" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, -802)
+rotation = -1.56556
+
+[node name="block_ground82" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3790, -563)
+rotation = -1.56556
+
+[node name="block_ground83" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, -359)
+rotation = -1.56556
+
+[node name="block_ground84" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, -136)
+rotation = -1.56556
+
+[node name="block_ground85" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, 86)
+rotation = -1.56556
+
+[node name="block_ground86" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, 296)
+rotation = -1.56556
+
+[node name="block_ground87" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, 508)
+rotation = -1.56556
+
+[node name="block_ground71" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2983, -1020)
+rotation = -1.56556
+
+[node name="block_ground74" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3796, -1025)
+rotation = -1.56556
+
+[node name="block_ground81" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(3428, -953)
+rotation = -1.56556
+scale = Vector2(0.640632, 1)
+
+[node name="block_ground36" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2038, -128)
+rotation = -1.56556
+
+[node name="block_ground37" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(2036, -210)
+rotation = -1.56556
+
+[node name="block_ground19" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(1318, 258)
+rotation = -1.56556
+
+[node name="block_ground4" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(31, 266)
+rotation = -1.56556
+
+[node name="block_ground5" parent="." instance=ExtResource("5_l8a57")]
+position = Vector2(31, 73)
+rotation = -1.56556
