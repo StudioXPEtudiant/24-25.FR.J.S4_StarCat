@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 175.0
+const SPEED = 350.0
 const JUMP_VELOCITY = -275.0
 var  max_jumps: int = 1
 var jumps_left: int = max_jumps
@@ -29,15 +29,15 @@ func _physics_process(delta: float) -> void:
 		velocity.x = move_toward(velocity.x, 0, 20)
 	if is_on_floor():
 		jumps_left = max_jumps
-	move_and_slide()
-	 
-	var collision = move_and_collide(velocity * delta)
+	
+	var collision = move_and_slide()
 	
 	if collision:
-		var collider = collision.get_collider()
-		if collider.is_in_group("Degat"):
-			print ("degat")
-			prendre_degats(1)
+		for i in get_slide_collision_count():
+			var collider = get_slide_collision(i).get_collider()
+			if collider.is_in_group("Degat"):
+				print ("degat")
+				prendre_degats(1)
 	
 	
 func prendre_degats(degats: int):

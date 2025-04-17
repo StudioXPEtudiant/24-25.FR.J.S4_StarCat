@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c051ijxgyxl8h"]
 
-[ext_resource type="Script" uid="uid://d3cioikvkpxfa" path="res://script/main_character.gd" id="1_31blc"]
+[ext_resource type="Script" path="res://script/main_character.gd" id="1_31blc"]
 [ext_resource type="Texture2D" uid="uid://bnigbyno5beye" path="res://texture/sprite/New_Piskel_8.png" id="1_hum36"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6jl28"]
@@ -9,6 +9,7 @@ size = Vector2(80, 92)
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ssjj0"]
 
 [node name="Player" type="CharacterBody2D" groups=["Player", "exit"]]
+collision_mask = 3
 script = ExtResource("1_31blc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
