@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://c051ijxgyxl8h" path="res://scene/prefabs/main_character.tscn" id="1_1uwrf"]
 [ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="2_x8t1s"]
-[ext_resource type="Script" uid="uid://bfrxmgoop5tv5" path="res://script/button_main_menu.gd" id="3_darpy"]
+[ext_resource type="Script" path="res://script/button_main_menu.gd" id="3_darpy"]
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_4rtw3"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_f6cpn"]
 [ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_1b3x8"]
@@ -99,27 +99,27 @@ position = Vector2(1133, 316)
 scale = Vector2(1.48644, 11.36)
 
 [node name="block_ground3" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(501, 528)
+position = Vector2(781, 604)
 scale = Vector2(2.19451, 1.81184)
 
 [node name="block_ground6" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(1080, 244)
+position = Vector2(992, -3)
 scale = Vector2(3.19451, 0.647944)
 
 [node name="block_ground7" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(729, 145)
+position = Vector2(815, 229)
 scale = Vector2(3.19451, 0.647944)
 
 [node name="block_ground8" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(187, 227)
+position = Vector2(-286, 360)
 scale = Vector2(6.86233, 0.800124)
 
 [node name="block_ground9" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(-21, 373)
+position = Vector2(-245, 254)
 scale = Vector2(-1.82099, 9.21516)
 
 [node name="block_ground4" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(861, 454)
+position = Vector2(879, 389)
 scale = Vector2(2.2411, -1.29831)
 
 [node name="block_ground10" parent="." instance=ExtResource("4_4rtw3")]
@@ -133,7 +133,7 @@ rotation = 0.864652
 scale = Vector2(2.64186, -1.43969)
 
 [node name="block_ground5" parent="." instance=ExtResource("4_4rtw3")]
-position = Vector2(764, 409)
+position = Vector2(1088, 591)
 scale = Vector2(2.2411, -2.89831)
 
 [node name="Eau" parent="." instance=ExtResource("5_f6cpn")]
@@ -156,7 +156,7 @@ position = Vector2(312, 160)
 position = Vector2(768, 280)
 
 [node name="collectable4" parent="." instance=ExtResource("7_ue1j8")]
-position = Vector2(1040, 184)
+position = Vector2(155, 236)
 
 [node name="collectable5" parent="." instance=ExtResource("7_ue1j8")]
 position = Vector2(736, 96)
@@ -165,7 +165,7 @@ position = Vector2(736, 96)
 position = Vector2(24, 80)
 
 [node name="collectable7" parent="." instance=ExtResource("7_ue1j8")]
-position = Vector2(880, 384)
+position = Vector2(164, 101)
 
 [node name="collectable8" parent="." instance=ExtResource("7_ue1j8")]
 position = Vector2(464, -8)
