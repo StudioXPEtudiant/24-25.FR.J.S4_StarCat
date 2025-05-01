@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=3 uid="uid://cyrshtl1m7wg3"]
 
-[ext_resource type="Script" uid="uid://bfrxmgoop5tv5" path="res://script/button_main_menu.gd" id="1_8evfg"]
-[ext_resource type="Script" uid="uid://cshgd52xkb5tn" path="res://script/level_1.gd" id="1_wn7s2"]
+[ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_8evfg"]
+[ext_resource type="Script" path="res://script/level_1.gd" id="1_wn7s2"]
 [ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="3_r06u4"]
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_ffk4s"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_m1a0p"]
