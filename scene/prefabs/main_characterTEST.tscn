@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://vyt45ewklsxy"]
+[gd_scene load_steps=5 format=3 uid="uid://chwm5h8jb3ubv"]
 
-[ext_resource type="Script" path="res://script/main_character.gd" id="1_31blc"]
-[ext_resource type="Texture2D" uid="uid://bnigbyno5beye" path="res://texture/sprite/New_Piskel_8.png" id="1_hum36"]
+[ext_resource type="Script" path="res://script/main_character.gd" id="1_gb2pe"]
+[ext_resource type="Texture2D" uid="uid://bnigbyno5beye" path="res://texture/sprite/New_Piskel_8.png" id="2_rhblk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6jl28"]
 size = Vector2(80, 92)
@@ -10,12 +10,12 @@ size = Vector2(80, 92)
 
 [node name="Player" type="CharacterBody2D" groups=["Player", "exit"]]
 collision_mask = 3
-script = ExtResource("1_31blc")
+script = ExtResource("1_gb2pe")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(2.38419e-07, 0)
 scale = Vector2(0.114258, 0.114258)
-texture = ExtResource("1_hum36")
+texture = ExtResource("2_rhblk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_6jl28")
