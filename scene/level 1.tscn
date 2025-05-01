@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cyrshtl1m7wg3"]
+[gd_scene load_steps=14 format=3 uid="uid://cyrshtl1m7wg3"]
 
 [ext_resource type="Script" uid="uid://bfrxmgoop5tv5" path="res://script/button_main_menu.gd" id="1_8evfg"]
 [ext_resource type="Script" uid="uid://cshgd52xkb5tn" path="res://script/level_1.gd" id="1_wn7s2"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_ffk4s"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_m1a0p"]
 [ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_12gj5"]
+[ext_resource type="PackedScene" uid="uid://c051ijxgyxl8h" path="res://scene/prefabs/main_character.tscn" id="7_k6pdc"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_83wet"]
 texture = ExtResource("3_r06u4")
@@ -53,10 +54,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Panel" type="Panel" parent="."]
 z_index = -1
-offset_left = -16.0
-offset_top = -8.0
-offset_right = 1149.0
-offset_bottom = 650.0
+offset_left = 3.0
+offset_top = -19.0
+offset_right = 1168.0
+offset_bottom = 639.0
 theme_override_styles/panel = SubResource("StyleBoxTexture_83wet")
 metadata/_edit_use_anchors_ = true
 
@@ -400,5 +401,8 @@ rotation = -1.56556
 [node name="block_ground89" parent="." instance=ExtResource("4_ffk4s")]
 position = Vector2(31, 73)
 rotation = -1.56556
+
+[node name="Player" parent="." instance=ExtResource("7_k6pdc")]
+position = Vector2(158, 490)
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
