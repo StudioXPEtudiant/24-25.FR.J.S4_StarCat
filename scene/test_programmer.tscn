@@ -1,12 +1,12 @@
 [gd_scene load_steps=14 format=3 uid="uid://bh75tukc1yl40"]
 
-[ext_resource type="PackedScene" uid="uid://c051ijxgyxl8h" path="res://scene/prefabs/main_character.tscn" id="1_1uwrf"]
+[ext_resource type="PackedScene" uid="uid://vyt45ewklsxy" path="res://scene/prefabs/main_character.tscn" id="1_1uwrf"]
 [ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="2_x8t1s"]
-[ext_resource type="Script" uid="uid://bfrxmgoop5tv5" path="res://script/button_main_menu.gd" id="3_darpy"]
+[ext_resource type="Script" path="res://script/button_main_menu.gd" id="3_darpy"]
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="4_4rtw3"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_f6cpn"]
 [ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_1b3x8"]
-[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://scene/prefabs/collectabble.tscn" id="7_ue1j8"]
+[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://collectabble.tscn" id="7_ue1j8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ycow7"]
 texture = ExtResource("2_x8t1s")

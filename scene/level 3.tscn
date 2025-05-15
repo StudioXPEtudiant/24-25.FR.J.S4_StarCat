@@ -1,3 +1,125 @@
-[gd_scene format=3 uid="uid://cd81ljnuwym0k"]
+[gd_scene load_steps=4 format=3 uid="uid://cd81ljnuwym0k"]
+
+[ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="1_jgjfn"]
+[ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="2_43ss4"]
+[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://collectabble.tscn" id="3_qlstd"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="block_ground" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(131, 616)
+
+[node name="block_ground" parent="block_ground" instance=ExtResource("1_jgjfn")]
+position = Vector2(0, -247)
+
+[node name="block_ground3" parent="block_ground" instance=ExtResource("1_jgjfn")]
+position = Vector2(218, -247)
+
+[node name="block_ground4" parent="block_ground" instance=ExtResource("1_jgjfn")]
+position = Vector2(431, -247)
+
+[node name="block_ground2" parent="block_ground" instance=ExtResource("1_jgjfn")]
+position = Vector2(769, -56)
+rotation = -4.7072
+scale = Vector2(3.56266, 1)
+
+[node name="block_ground5" parent="block_ground" instance=ExtResource("1_jgjfn")]
+position = Vector2(634, -4)
+
+[node name="block_ground2" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(716, 97)
+scale = Vector2(2.04, 1)
+
+[node name="block_ground3" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(349, 616)
+
+[node name="block_ground4" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(562, 616)
+
+[node name="block_ground5" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(534, -173)
+rotation = -0.621732
+scale = Vector2(3.24, 1)
+
+[node name="block_ground6" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(360, -130)
+
+[node name="block_ground7" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(688, -370)
+
+[node name="block_ground8" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(299, -132)
+
+[node name="block_ground9" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(590, -363)
+
+[node name="block_ground10" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(198, -56)
+rotation = -1.52521
+
+[node name="block_ground11" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(481, -286)
+rotation = -1.57684
+
+[node name="block_ground12" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(543, 43)
+
+[node name="block_ground13" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(964, 43)
+
+[node name="block_ground14" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1311, -372)
+scale = Vector2(4.4, 1)
+
+[node name="block_ground15" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1049, -246)
+rotation = -1.57369
+
+[node name="block_ground16" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1665, -190)
+scale = Vector2(3.61211, -0.98459)
+
+[node name="block_ground17" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1493, 37)
+scale = Vector2(2.65101, 1.17959)
+
+[node name="block_ground18" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1742, 744)
+scale = Vector2(2.55468, 1)
+
+[node name="block_ground19" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1733, 252)
+scale = Vector2(2.68, 1)
+
+[node name="block_ground20" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1473, 500)
+scale = Vector2(2.24, 1)
+
+[node name="block_ground21" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(2020, 22.9999)
+rotation = 1.5708
+scale = Vector2(8.84, 1)
+
+[node name="block_ground22" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1051, 773)
+rotation = 1.5708
+scale = Vector2(5.858, 5.59943)
+
+[node name="block_ground23" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1101, 43)
+
+[node name="block_ground24" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(1325, 1202)
+
+[node name="Node2D" parent="." instance=ExtResource("2_43ss4")]
+position = Vector2(1709, 1254)
+scale = Vector2(4.15823, 1)
+
+[node name="block_ground25" parent="." instance=ExtResource("1_jgjfn")]
+position = Vector2(11, -1722)
+rotation = 1.5708
+scale = Vector2(20, 1)
+
+[node name="secret lvl" parent="." instance=ExtResource("3_qlstd")]
+position = Vector2(116, -943)
+scale = Vector2(3, 3)
