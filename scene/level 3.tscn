@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://d0olt17xoavyv" path="res://scene/prefabs/block_ground.tscn" id="1_jgjfn"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="2_43ss4"]
-[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://collectabble.tscn" id="3_qlstd"]
+[ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://scene/prefabs/collectabble.tscn" id="3_qlstd"]
 
 [node name="Node2D" type="Node2D"]
 
