@@ -9,6 +9,7 @@ size = Vector2(80, 92)
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ssjj0"]
 
 [node name="Player" type="CharacterBody2D" groups=["Player", "exit"]]
+collision_layer = 16
 collision_mask = 3
 script = ExtResource("1_lxgyd")
 
