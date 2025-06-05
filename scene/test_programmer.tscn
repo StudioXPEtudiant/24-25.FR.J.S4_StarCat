@@ -41,7 +41,7 @@ shadow_offset = Vector2(5, 5)
 [sub_resource type="TileSet" id="TileSet_umtg4"]
 physics_layer_0/collision_layer = 1
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_d0tqe"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tbyu7"]
 texture = ExtResource("8_cp0wd")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -128,7 +128,7 @@ texture = ExtResource("8_cp0wd")
 physics_layer_0/collision_layer = 1
 terrain_set_0/mode = 0
 navigation_layer_0/layers = 1
-sources/0 = SubResource("TileSetAtlasSource_d0tqe")
+sources/0 = SubResource("TileSetAtlasSource_tbyu7")
 
 [node name="TEST PROGRAMMER" type="Node2D"]
 
