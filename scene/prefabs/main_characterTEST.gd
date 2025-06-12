@@ -52,7 +52,7 @@ func soigner(soin: int):
 	
 func mourir():
 	queue_free()
-	get_tree().change_scene_to_file("res://scene/test_programmer.tscn")
+	get_tree().change_scene_to_file("res://scene/level 1.tscn")
 
 func _input(event):
 	if event.is_action_pressed("degat"):  # Exemple : touche "Entrée"

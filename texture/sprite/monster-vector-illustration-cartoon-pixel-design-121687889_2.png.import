@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2i26ef6tccx4"
-path="res://.godot/imported/New_Piskel_4.png-24dbe6e8ddc18c579d9c237030a13928.ctex"
+uid="uid://cgjsvvtq7cpyu"
+path="res://.godot/imported/monster-vector-illustration-cartoon-pixel-design-121687889_2.png-3a99f779ca6e7c1272a2df10e98e59f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/prefabs/New_Piskel_4.png"
-dest_files=["res://.godot/imported/New_Piskel_4.png-24dbe6e8ddc18c579d9c237030a13928.ctex"]
+source_file="res://texture/sprite/monster-vector-illustration-cartoon-pixel-design-121687889_2.png"
+dest_files=["res://.godot/imported/monster-vector-illustration-cartoon-pixel-design-121687889_2.png-3a99f779ca6e7c1272a2df10e98e59f8.ctex"]
 
 [params]
 

@@ -1,12 +1,13 @@
 [gd_scene load_steps=4 format=3 uid="uid://0gma27om5scw"]
 
-[ext_resource type="Script" uid="uid://bf60hyyusl13e" path="res://script/collectables.gd" id="1_qq00c"]
+[ext_resource type="Script" path="res://script/collectables.gd" id="1_qq00c"]
 [ext_resource type="Texture2D" uid="uid://8lv0gqv3irb5" path="res://texture/sprite/New_Piskel_wood_1.png" id="2_2w83c"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ljjf0"]
 size = Vector2(48, 48)
 
 [node name="collectable" type="Area2D"]
+collision_mask = 17
 script = ExtResource("1_qq00c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

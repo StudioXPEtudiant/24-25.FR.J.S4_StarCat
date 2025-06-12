@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://djrn88mihk53j"
-path="res://.godot/imported/New_Piskel_7.png-df1093775a08bf65026a32002b3b1016.ctex"
+uid="uid://d2i26ef6tccx4"
+path="res://.godot/imported/New_Piskel_4.png-3c073bcac6bf9838ef27aad5799feed7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scene/prefabs/New_Piskel_7.png"
-dest_files=["res://.godot/imported/New_Piskel_7.png-df1093775a08bf65026a32002b3b1016.ctex"]
+source_file="res://texture/sprite/New_Piskel_4.png"
+dest_files=["res://.godot/imported/New_Piskel_4.png-3c073bcac6bf9838ef27aad5799feed7.ctex"]
 
 [params]
 
