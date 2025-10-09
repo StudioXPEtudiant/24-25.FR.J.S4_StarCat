@@ -1,7 +1,7 @@
-[gd_scene load_steps=20 format=4 uid="uid://cyrshtl1m7wg3"]
+[gd_scene load_steps=22 format=4 uid="uid://cyrshtl1m7wg3"]
 
-[ext_resource type="Script" path="res://script/button_main_menu.gd" id="1_8evfg"]
-[ext_resource type="Script" path="res://script/level_1.gd" id="1_wn7s2"]
+[ext_resource type="Script" uid="uid://bfrxmgoop5tv5" path="res://script/button_main_menu.gd" id="1_8evfg"]
+[ext_resource type="Script" uid="uid://cshgd52xkb5tn" path="res://script/level_1.gd" id="1_wn7s2"]
 [ext_resource type="Texture2D" uid="uid://dpt4c1o3eua3g" path="res://texture/Background/fond-bleu-new.jpg" id="3_r06u4"]
 [ext_resource type="PackedScene" uid="uid://b1qkg37nj4nha" path="res://scene/prefabs/Eau.tscn" id="5_m1a0p"]
 [ext_resource type="AudioStream" uid="uid://ckfucas1ndbr1" path="res://songs/terror-heights-dark-ambience-230667.mp3" id="6_12gj5"]
@@ -9,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dmo384c3eu82y" path="res://scene/Design sans titre (3).png" id="8_iija0"]
 [ext_resource type="Texture2D" uid="uid://d2i26ef6tccx4" path="res://texture/sprite/New_Piskel_4.png" id="8_tvvp0"]
 [ext_resource type="PackedScene" uid="uid://0gma27om5scw" path="res://scene/prefabs/collectabble.tscn" id="9_dtt37"]
+[ext_resource type="Texture2D" uid="uid://di3drafhqddmj" path="res://texture/sprite/maeuw_1.png" id="10_upa6s"]
+[ext_resource type="Texture2D" uid="uid://cvu03sqay1jkc" path="res://texture/sprite/image.png" id="11_fjn43"]
 
 [sub_resource type="TileSet" id="TileSet_h82wh"]
 physics_layer_0/collision_layer = 1
@@ -1132,5 +1134,44 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_k40f3")
 text = "II"
 script = ExtResource("1_8evfg")
 metadata/_edit_use_anchors_ = true
+
+[node name="Maeuw1" type="Sprite2D" parent="."]
+position = Vector2(1241, 249)
+scale = Vector2(0.240723, 0.174805)
+texture = ExtResource("10_upa6s")
+
+[node name="Panel" type="Panel" parent="Maeuw1"]
+anchors_preset = -1
+anchor_left = -0.137
+anchor_right = 0.573
+anchor_bottom = 0.587
+offset_left = 9321.82
+offset_top = -7105.07
+offset_right = 8634.78
+offset_bottom = -7666.16
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Maeuw1/Panel"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+text = "flèche de droit direction droite
+flèche de gauche direction gauche
+flèche du haut saut
+"
+
+[node name="Button" type="Button" parent="Maeuw1"]
+anchors_preset = -1
+anchor_left = 0.298
+anchor_right = 0.604
+anchor_bottom = 1.0
+offset_left = 8876.38
+offset_top = -7105.07
+offset_right = 8571.04
+offset_bottom = -8121.07
+
+[node name="Image" type="Sprite2D" parent="."]
+position = Vector2(3450.2, -991)
+scale = Vector2(0.140815, 0.180204)
+texture = ExtResource("11_fjn43")
 
 [connection signal="pressed" from="Player/Camera2D/Panel/Button" to="Player/Camera2D/Panel/Button" method="_on_pressed"]

@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://vyt45ewklsxy"]
 
 [ext_resource type="Texture2D" uid="uid://bnigbyno5beye" path="res://texture/sprite/New_Piskel_8.png" id="1_hum36"]
-[ext_resource type="Script" path="res://scene/prefabs/main_characterTEST.gd" id="1_lxgyd"]
+[ext_resource type="Script" uid="uid://cklnl8wpoxd14" path="res://scene/prefabs/main_characterTEST.gd" id="1_lxgyd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6jl28"]
 size = Vector2(80, 92)
