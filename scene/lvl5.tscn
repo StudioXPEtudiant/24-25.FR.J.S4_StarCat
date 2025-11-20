@@ -5,24 +5,20 @@
 [node name="Node2D" type="Node2D"]
 
 [node name="block_ground2" parent="." instance=ExtResource("1_o13qa")]
-position = Vector2(977, 671)
+position = Vector2(982, 668)
 scale = Vector2(10.8268, 3.16979)
 
-[node name="block_ground" parent="." instance=ExtResource("1_o13qa")]
-position = Vector2(629, 556)
-scale = Vector2(2.2, 4)
-
 [node name="block_ground3" parent="." instance=ExtResource("1_o13qa")]
-position = Vector2(646, 9)
+position = Vector2(332, 32)
 scale = Vector2(6.01365, 1.27152)
 
-[node name="block_ground4" parent="." instance=ExtResource("1_o13qa")]
-position = Vector2(-104, 129)
-rotation = 1.5708
-scale = Vector2(2, 1)
-
-[node name="block_ground5" parent="." instance=ExtResource("1_o13qa")]
-position = Vector2(1265, 112)
+[node name="block_ground5" parent="block_ground3" instance=ExtResource("1_o13qa")]
+position = Vector2(606, 1390)
 rotation = 1.5708
 scale = Vector2(2, 1)
 constant_angular_velocity = 1.5708
+
+[node name="block_ground4" parent="." instance=ExtResource("1_o13qa")]
+position = Vector2(2095, 556)
+rotation = 1.5708
+scale = Vector2(2, 1)
